@@ -1,0 +1,172 @@
+
+@charset "UTF-8";
+
+/*
+Theme Name: Twenty Twenty-One
+Theme URI: https://wordpress.org/themes/twentytwentyone/
+Author: the WordPress team
+Author URI: https://wordpress.org/
+Description: Twenty Twenty-One is a blank canvas for your ideas and it makes the block editor your best brush. With new block patterns, which allow you to create a beautiful layout in a matter of seconds, this theme’s soft colors and eye-catching — yet timeless — design will let your work shine. Take it for a spin! See how Twenty Twenty-One elevates your portfolio, business website, or personal blog.
+Requires at least: 5.3
+Tested up to: 6.2
+Requires PHP: 5.6
+Version: 1.8
+License: GNU General Public License v2 or later
+License URI: http://www.gnu.org/licenses/gpl-2.0.html
+Text Domain: twentytwentyone
+Tags: one-column, accessibility-ready, custom-colors, custom-menu, custom-logo, editor-style, featured-images, footer-widgets, block-patterns, rtl-language-support, sticky-post, threaded-comments, translation-ready
+
+Twenty Twenty-One WordPress Theme, (C) 2020 WordPress.org
+Twenty Twenty-One is distributed under the terms of the GNU GPL.
+*/
+
+/**
+ * SETTINGS
+ * File-header..........The file header for the themes style.css file.
+ * Fonts................Any font files, if the project needs specific fonts.
+ * Global...............Project-specific, globally available variables.
+ *
+ * TOOLS
+ * Functions............Global functions.
+ * Mixins...............Global mixins.
+ *
+ * GENERIC
+ * Normalize.css........Normalise browser defaults.
+ * Breakpoints..........Mixins and variables for responsive styles
+ * Vertical-margins.....Vertical spacing for the main components.
+ * Reset................Reset specific elements to make them easier to style in other contexts.
+ * Clearings............Clearings for the main components.
+ *
+ * ELEMENTS
+ * Blockquote...........Default blockquote.
+ * Forms................Element-level form styling.
+ * Headings.............H1–H6
+ * Links................Default links.
+ * Lists................Default lists.
+ * Media................Images, Figure, Figcaption, Embed, iFrame, Objects, Video.
+ *
+ * BLOCKS
+ * Audio................Specific styles for the audio block.
+ * Button...............Specific styles for the button block.
+ * Code.................Specific styles for the code block.
+ * Columns..............Specific styles for the columns block.
+ * Cover................Specific styles for the cover block.
+ * File.................Specific styles for the file block.
+ * Gallery..............Specific styles for the gallery block.
+ * Group................Specific styles for the group block.
+ * Heading..............Specific styles for the heading block.
+ * Image................Specific styles for the image block.
+ * Latest comments......Specific styles for the latest comments block.
+ * Latest posts.........Specific styles for the latest posts block.
+ * Legacy...............Specific styles for the legacy gallery.
+ * List.................Specific styles for the list block.
+ * Media text...........Specific styles for the media and text block.
+ * Navigation...........Specific styles for the navigation block.
+ * Paragraph............Specific styles for the paragraph block.
+ * Pullquote............Specific styles for the pullquote block.
+ * Quote................Specific styles for the quote block.
+ * Search...............Specific styles for the search block.
+ * Separator............Specific styles for the separator block.
+ * Table................Specific styles for the table block.
+ * Verse................Specific styles for the verse block.
+ * Video................Specific styles for the video block.
+ * Utilities............Block alignments.
+ *
+ * COMPONENTS
+ * Header...............Header styles.
+ * Footer...............Footer styles.
+ * Comments.............Comment styles.
+ * Archives.............Archive styles.
+ * 404..................404 styles.
+ * Search...............Search styles.
+ * Navigation...........Navigation styles.
+ * Footer Navigation....Footer Navigation styles.
+ * Pagination...........Pagination styles.
+ * Single...............Single page and post styles.
+ * Posts and pages......Misc, sticky post styles.
+ * Entry................Entry, author biography.
+ * Widget...............Widget styles.
+ * Editor...............Editor styles.
+ *
+ * UTILITIES
+ * A11y.................Screen reader text, prefers reduced motion etc.
+ * Color Palette........Classes for the color palette colors.
+ * Editor Font Sizes....Editor Font Sizes.
+ * Measure..............The width of a line of text, in characters.
+ */
+
+/* Categories 01 to 03 are the basics. */
+
+/* Variables */
+
+
+
+body {font-family: Arial, Helvetica, sans-serif;}
+* {box-sizing: border-box}
+
+/* Full-width input fields */
+input[type=text], input[type=password] {
+  width: 100%;
+  padding: 15px;
+  margin: 5px 0 22px 0;
+  display: inline-block;
+  border: none;
+  background: #f1f1f1;
+}
+
+input[type=text]:focus, input[type=password]:focus {
+  background-color: #ddd;
+  outline: none;
+}
+
+hr {
+  border: 1px solid #f1f1f1;
+  margin-bottom: 25px;
+}
+
+/* Set a style for all buttons */
+button {
+  background-color: #04AA6D;
+  color: white;
+  padding: 14px 20px;
+  margin: 8px 0;
+  border: none;
+  cursor: pointer;
+  width: 100%;
+  opacity: 0.9;
+}
+
+button:hover {
+  opacity:1;
+}
+
+/* Extra styles for the cancel button */
+.cancelbtn {
+  padding: 14px 20px;
+  background-color: #f44336;
+}
+
+/* Float cancel and signup buttons and add an equal width */
+.cancelbtn, .signupbtn {
+  float: left;
+  width: 50%;
+}
+
+/* Add padding to container elements */
+.container {
+  padding: 16px;
+}
+
+/* Clear floats */
+.clearfix::after {
+  content: "";
+  clear: both;
+  display: table;
+}
+
+/* Change styles for cancel button and signup button on extra small screens */
+@media screen and (max-width: 300px) {
+  .cancelbtn, .signupbtn {
+     width: 100%;
+  }
+}
